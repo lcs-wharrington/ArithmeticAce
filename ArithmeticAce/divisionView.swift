@@ -1,13 +1,13 @@
 //
-//  MultiplicationView.swift
-//  ArithmeticAce
+//  divisionView.swift
+//  arithmeticAce
 //
 //  Created by William Robert Harrington on 2022-02-08.
 //
 
 import SwiftUI
 
-struct MultiplicationView: View {
+struct divisionView: View {
     
     // MARK: Stored properties
     @State var value1 = Int.random(in: 1...12)
@@ -25,7 +25,7 @@ struct MultiplicationView: View {
     // MARK: Computed properties
     // What is the correct result?
     var correctResult: Int {
-        return value1 * value2
+        return value1 / value2
     }
     
     var body: some View {
@@ -35,7 +35,7 @@ struct MultiplicationView: View {
             Spacer()
             
             HStack {
-                Text("✕")
+                Text("÷")
                 
                 Spacer()
                 
@@ -141,8 +141,8 @@ struct MultiplicationView: View {
     }
 }
 
-struct MultiplicationView_Previews: PreviewProvider {
+struct divisionView_Previews: PreviewProvider {
     static var previews: some View {
-        MultiplicationView()
+        divisionView()
     }
 }

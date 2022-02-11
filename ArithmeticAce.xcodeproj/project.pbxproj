@@ -7,18 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EA57137827B31933005A4DB3 /* ArithmeticAceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA57137727B31933005A4DB3 /* ArithmeticAceApp.swift */; };
-		EA57137A27B31933005A4DB3 /* MultiplicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA57137927B31933005A4DB3 /* MultiplicationView.swift */; };
+		EA57137827B31933005A4DB3 /* arithmeticAceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA57137727B31933005A4DB3 /* arithmeticAceApp.swift */; };
+		EA57137A27B31933005A4DB3 /* multiplicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA57137927B31933005A4DB3 /* multiplicationView.swift */; };
 		EA57137C27B31934005A4DB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA57137B27B31934005A4DB3 /* Assets.xcassets */; };
 		EA57137F27B31934005A4DB3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA57137E27B31934005A4DB3 /* Preview Assets.xcassets */; };
+		EA831A1027B6FEBF006091BA /* divisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA831A0F27B6FEBF006091BA /* divisionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EA57137427B31933005A4DB3 /* ArithmeticAce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArithmeticAce.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA57137727B31933005A4DB3 /* ArithmeticAceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArithmeticAceApp.swift; sourceTree = "<group>"; };
-		EA57137927B31933005A4DB3 /* MultiplicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplicationView.swift; sourceTree = "<group>"; };
+		EA57137727B31933005A4DB3 /* arithmeticAceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = arithmeticAceApp.swift; sourceTree = "<group>"; };
+		EA57137927B31933005A4DB3 /* multiplicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = multiplicationView.swift; sourceTree = "<group>"; };
 		EA57137B27B31934005A4DB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA57137E27B31934005A4DB3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EA831A0F27B6FEBF006091BA /* divisionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = divisionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +53,9 @@
 		EA57137627B31933005A4DB3 /* ArithmeticAce */ = {
 			isa = PBXGroup;
 			children = (
-				EA57137727B31933005A4DB3 /* ArithmeticAceApp.swift */,
-				EA57137927B31933005A4DB3 /* MultiplicationView.swift */,
+				EA57137727B31933005A4DB3 /* arithmeticAceApp.swift */,
+				EA57137927B31933005A4DB3 /* multiplicationView.swift */,
+				EA831A0F27B6FEBF006091BA /* divisionView.swift */,
 				EA57137B27B31934005A4DB3 /* Assets.xcassets */,
 				EA57137D27B31934005A4DB3 /* Preview Content */,
 			);
@@ -137,8 +140,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA57137A27B31933005A4DB3 /* MultiplicationView.swift in Sources */,
-				EA57137827B31933005A4DB3 /* ArithmeticAceApp.swift in Sources */,
+				EA57137A27B31933005A4DB3 /* multiplicationView.swift in Sources */,
+				EA831A1027B6FEBF006091BA /* divisionView.swift in Sources */,
+				EA57137827B31933005A4DB3 /* arithmeticAceApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,6 +1,6 @@
 //
-//  ArithmeticAceApp.swift
-//  ArithmeticAce
+//  arithmeticAceApp.swift
+//  arithmeticAce
 //
 //  Created by William Robert Harrington on 2022-02-08.
 //
@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct ArithmeticAceApp: App {
+struct arithmeticAceApp: App {
     var body: some Scene {
         WindowGroup {
-            MultiplicationView()
+            divisionView()
         }
     }
 }
