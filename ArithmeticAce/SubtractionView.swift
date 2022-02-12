@@ -1,5 +1,5 @@
 //
-//  multiplicationView.swift
+//  SubtractionView.swift
 //  arithmeticAce
 //
 //  Created by William Robert Harrington on 2022-02-08.
@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-struct multiplicationView: View {
+struct SubtractionView: View {
     
     // MARK: Stored properties
-    @State var value1 = Int.random(in: 1...10)
+    @State var value1 = Int.random(in: 10...20)
     @State var value2 = Int.random(in: 1...10)
     
     // This string contains whatever the user types in
@@ -25,7 +25,7 @@ struct multiplicationView: View {
     // MARK: Computed properties
     // What is the correct result?
     var correctResult: Int {
-        return value1 * value2
+        return value1 - value2
     }
     
     var body: some View {
@@ -35,7 +35,7 @@ struct multiplicationView: View {
             Spacer()
             
             HStack {
-                Text("✕")
+                Text("-")
                 
                 Spacer()
                 
@@ -141,8 +141,8 @@ struct multiplicationView: View {
     }
 }
 
-struct multiplicationView_Previews: PreviewProvider {
+struct SubtractionView_Previews: PreviewProvider {
     static var previews: some View {
-        multiplicationView()
+        SubtractionView()
     }
 }

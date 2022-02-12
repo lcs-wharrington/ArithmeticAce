@@ -10,8 +10,8 @@ import SwiftUI
 struct divisionView: View {
     
     // MARK: Stored properties
-    @State var value1 = Int.random(in: 1...12)
-    @State var value2 = Int.random(in: 1...12)
+    @State var value1 = Int.random(in: 20...100)
+    @State var value2 = Int.random(in: 1...10)
     
     // This string contains whatever the user types in
     @State var inputGiven = ""
