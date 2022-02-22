@@ -1,18 +1,18 @@
 //
-//  multiplicationView.swift
-//  arithmeticAce
+//  DivisionView.swift
+//  ArithmeticAce
 //
-//  Created by William Robert Harrington on 2022-02-08.
+//  Created by Russell Gordon on 2022-02-08.
 //
 
 import SwiftUI
 
-struct multiplicationView: View {
+struct DivisionView: View {
     
     // MARK: Stored properties
-    @State var value1 = Int.random(in: 1...10)
-    @State var value2 = Int.random(in: 1...10)
-    
+    @State var correctQuotient = Int.random(in: 1...12)
+    @State var divisor = Int.random(in: 1...12)
+
     // This string contains whatever the user types in
     @State var inputGiven = ""
     
@@ -23,27 +23,22 @@ struct multiplicationView: View {
     @State var answerCorrect = false
     
     // MARK: Computed properties
-    // What is the correct result?
-    var correctResult: Int {
-        return value1 * value2
+    // What is the dividend, based on the randomly generated divisor and quotient?
+    var dividend: Int {
+        return correctQuotient * divisor
     }
     
     var body: some View {
         
         VStack(spacing: 0) {
-            
-            Spacer()
-            
             HStack {
-                Text("✕")
+                Text("÷")
                 
                 Spacer()
                 
                 VStack(alignment: .trailing) {
-                    Text("\(value1)")
-                        .bold()
-                    Text("\(value2)")
-                        .bold()
+                    Text("\(dividend)")
+                    Text("\(divisor)")
                 }
             }
             
@@ -53,15 +48,13 @@ struct multiplicationView: View {
                 ZStack {
                     Image(systemName: "checkmark.circle")
                         .foregroundColor(.green)
-                    
-                    //        CONDITION      true  false
+                        //        CONDITION      true  false
                         .opacity(answerCorrect == true ? 1.0 : 0.0)
                     
                     Image(systemName: "x.square")
                         .foregroundColor(.red)
-                    
-                    //        CONDITION1         AND     CONDITION2         true  false
-                    //       answerChecked = true     answerCorrect = false
+                        //        CONDITION1         AND     CONDITION2         true  false
+                        //       answerChecked = true     answerCorrect = false
                         .opacity(answerChecked == true && answerCorrect == false ? 1.0 : 0.0)
                     
                     
@@ -80,19 +73,17 @@ struct multiplicationView: View {
                     answerChecked = true
                     
                     // Convert the input given to an integer, if possible
-                    guard let resultGiven = Int(inputGiven) else {
+                    guard let quotientGiven = Int(inputGiven) else {
                         // Sadness, not a number
                         answerCorrect = false
                         return
                     }
                     
                     // Check the answer!
-                    if resultGiven == correctResult {
-                        
+                    if quotientGiven == correctQuotient {
                         // Celebrate! 👍🏼
                         answerCorrect = true
                     } else {
-                        
                         // Sadness, they gave a number, but it's correct 😭
                         answerCorrect = false
                     }
@@ -100,19 +91,16 @@ struct multiplicationView: View {
                     Text("Check Answer")
                         .font(.largeTitle)
                 })
-                
                     .padding()
                     .buttonStyle(.bordered)
-                
-                // Only show this button when an answer has not been checked
+                    // Only show this button when an answer has not been checked
                     .opacity(answerChecked == false ? 1.0 : 0.0)
                 
                 Button(action: {
-                    
                     // Generate a new question
-                    value1 = Int.random(in: 1...12)
-                    value2 = Int.random(in: 1...12)
-                    
+                    correctQuotient = Int.random(in: 1...12)
+                    divisor = Int.random(in: 1...12)
+
                     // Reset properties that track what's happening with the current question
                     answerChecked = false
                     answerCorrect = false
@@ -125,24 +113,35 @@ struct multiplicationView: View {
                 })
                     .padding()
                     .buttonStyle(.bordered)
-                // Only show this button when an answer has been checked
+                    // Only show this button when an answer has been checked
                     .opacity(answerChecked == true ? 1.0 : 0.0)
                 
             }
             
-            
-            
+            ZStack{
+
+                //Insert Correct animation
+                LottieView(animationNamed: "5785-checkmark")
+                    // Only show animation when nessisary
+                    .opacity(answerCorrect == true ? 1.0 : 0.0)
+
+                //Insert incorrect animation
+                LottieView(animationNamed: "91878-bouncy-fail")
+                    // Only show animation when nessisary
+                    .opacity(answerChecked == true && answerCorrect == false ? 1.0 : 0.0)
+            }
+                        
             Spacer()
         }
         .padding(.horizontal)
-        .font(.system(size: 45))
+        .font(.system(size: 72))
         
         
     }
 }
 
-struct multiplicationView_Previews: PreviewProvider {
+struct DivisionView_Previews: PreviewProvider {
     static var previews: some View {
-        multiplicationView()
+        DivisionView()
     }
 }

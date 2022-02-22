@@ -7,28 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EA0A774127B76E3900E32390 /* AdditionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0A774027B76E3900E32390 /* AdditionView.swift */; };
-		EA0A774327B7700C00E32390 /* SubtractionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0A774227B7700C00E32390 /* SubtractionView.swift */; };
-		EA57137827B31933005A4DB3 /* arithmeticAceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA57137727B31933005A4DB3 /* arithmeticAceApp.swift */; };
-		EA57137A27B31933005A4DB3 /* multiplicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA57137927B31933005A4DB3 /* multiplicationView.swift */; };
-		EA57137C27B31934005A4DB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA57137B27B31934005A4DB3 /* Assets.xcassets */; };
-		EA57137F27B31934005A4DB3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA57137E27B31934005A4DB3 /* Preview Assets.xcassets */; };
-		EA831A1027B6FEBF006091BA /* divisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA831A0F27B6FEBF006091BA /* divisionView.swift */; };
+		EA8AE80F27C523370095ACC1 /* DadJokesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8AE80E27C523370095ACC1 /* DadJokesApp.swift */; };
+		EA8AE81127C523370095ACC1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8AE81027C523370095ACC1 /* ContentView.swift */; };
+		EA8AE81327C523380095ACC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA8AE81227C523380095ACC1 /* Assets.xcassets */; };
+		EA8AE81627C523380095ACC1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA8AE81527C523380095ACC1 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EA0A774027B76E3900E32390 /* AdditionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionView.swift; sourceTree = "<group>"; };
-		EA0A774227B7700C00E32390 /* SubtractionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractionView.swift; sourceTree = "<group>"; };
-		EA57137427B31933005A4DB3 /* ArithmeticAce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArithmeticAce.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA57137727B31933005A4DB3 /* arithmeticAceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = arithmeticAceApp.swift; sourceTree = "<group>"; };
-		EA57137927B31933005A4DB3 /* multiplicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = multiplicationView.swift; sourceTree = "<group>"; };
-		EA57137B27B31934005A4DB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EA57137E27B31934005A4DB3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		EA831A0F27B6FEBF006091BA /* divisionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = divisionView.swift; sourceTree = "<group>"; };
+		EA8AE80B27C523370095ACC1 /* DadJokes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DadJokes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA8AE80E27C523370095ACC1 /* DadJokesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadJokesApp.swift; sourceTree = "<group>"; };
+		EA8AE81027C523370095ACC1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EA8AE81227C523380095ACC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA8AE81527C523380095ACC1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		EA57137127B31933005A4DB3 /* Frameworks */ = {
+		EA8AE80827C523370095ACC1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,40 +32,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		EA57136B27B31933005A4DB3 = {
+		EA8AE80227C523370095ACC1 = {
 			isa = PBXGroup;
 			children = (
-				EA57137627B31933005A4DB3 /* ArithmeticAce */,
-				EA57137527B31933005A4DB3 /* Products */,
+				EA8AE80D27C523370095ACC1 /* DadJokes */,
+				EA8AE80C27C523370095ACC1 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		EA57137527B31933005A4DB3 /* Products */ = {
+		EA8AE80C27C523370095ACC1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EA57137427B31933005A4DB3 /* ArithmeticAce.app */,
+				EA8AE80B27C523370095ACC1 /* DadJokes.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EA57137627B31933005A4DB3 /* ArithmeticAce */ = {
+		EA8AE80D27C523370095ACC1 /* DadJokes */ = {
 			isa = PBXGroup;
 			children = (
-				EA57137727B31933005A4DB3 /* arithmeticAceApp.swift */,
-				EA57137927B31933005A4DB3 /* multiplicationView.swift */,
-				EA831A0F27B6FEBF006091BA /* divisionView.swift */,
-				EA0A774027B76E3900E32390 /* AdditionView.swift */,
-				EA0A774227B7700C00E32390 /* SubtractionView.swift */,
-				EA57137B27B31934005A4DB3 /* Assets.xcassets */,
-				EA57137D27B31934005A4DB3 /* Preview Content */,
+				EA8AE80E27C523370095ACC1 /* DadJokesApp.swift */,
+				EA8AE81027C523370095ACC1 /* ContentView.swift */,
+				EA8AE81227C523380095ACC1 /* Assets.xcassets */,
+				EA8AE81427C523380095ACC1 /* Preview Content */,
 			);
-			path = ArithmeticAce;
+			path = DadJokes;
 			sourceTree = "<group>";
 		};
-		EA57137D27B31934005A4DB3 /* Preview Content */ = {
+		EA8AE81427C523380095ACC1 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				EA57137E27B31934005A4DB3 /* Preview Assets.xcassets */,
+				EA8AE81527C523380095ACC1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -79,39 +70,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EA57137327B31933005A4DB3 /* ArithmeticAce */ = {
+		EA8AE80A27C523370095ACC1 /* DadJokes */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EA57138227B31934005A4DB3 /* Build configuration list for PBXNativeTarget "ArithmeticAce" */;
+			buildConfigurationList = EA8AE81927C523380095ACC1 /* Build configuration list for PBXNativeTarget "DadJokes" */;
 			buildPhases = (
-				EA57137027B31933005A4DB3 /* Sources */,
-				EA57137127B31933005A4DB3 /* Frameworks */,
-				EA57137227B31933005A4DB3 /* Resources */,
+				EA8AE80727C523370095ACC1 /* Sources */,
+				EA8AE80827C523370095ACC1 /* Frameworks */,
+				EA8AE80927C523370095ACC1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ArithmeticAce;
-			productName = ArithmeticAce;
-			productReference = EA57137427B31933005A4DB3 /* ArithmeticAce.app */;
+			name = DadJokes;
+			productName = DadJokes;
+			productReference = EA8AE80B27C523370095ACC1 /* DadJokes.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		EA57136C27B31933005A4DB3 /* Project object */ = {
+		EA8AE80327C523370095ACC1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1310;
-				LastUpgradeCheck = 1310;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
 				TargetAttributes = {
-					EA57137327B31933005A4DB3 = {
-						CreatedOnToolsVersion = 13.1;
+					EA8AE80A27C523370095ACC1 = {
+						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
 			};
-			buildConfigurationList = EA57136F27B31933005A4DB3 /* Build configuration list for PBXProject "ArithmeticAce" */;
+			buildConfigurationList = EA8AE80627C523370095ACC1 /* Build configuration list for PBXProject "DadJokes" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -119,45 +110,42 @@
 				en,
 				Base,
 			);
-			mainGroup = EA57136B27B31933005A4DB3;
-			productRefGroup = EA57137527B31933005A4DB3 /* Products */;
+			mainGroup = EA8AE80227C523370095ACC1;
+			productRefGroup = EA8AE80C27C523370095ACC1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EA57137327B31933005A4DB3 /* ArithmeticAce */,
+				EA8AE80A27C523370095ACC1 /* DadJokes */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		EA57137227B31933005A4DB3 /* Resources */ = {
+		EA8AE80927C523370095ACC1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA57137F27B31934005A4DB3 /* Preview Assets.xcassets in Resources */,
-				EA57137C27B31934005A4DB3 /* Assets.xcassets in Resources */,
+				EA8AE81627C523380095ACC1 /* Preview Assets.xcassets in Resources */,
+				EA8AE81327C523380095ACC1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		EA57137027B31933005A4DB3 /* Sources */ = {
+		EA8AE80727C523370095ACC1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA0A774127B76E3900E32390 /* AdditionView.swift in Sources */,
-				EA57137A27B31933005A4DB3 /* multiplicationView.swift in Sources */,
-				EA831A1027B6FEBF006091BA /* divisionView.swift in Sources */,
-				EA57137827B31933005A4DB3 /* arithmeticAceApp.swift in Sources */,
-				EA0A774327B7700C00E32390 /* SubtractionView.swift in Sources */,
+				EA8AE81127C523370095ACC1 /* ContentView.swift in Sources */,
+				EA8AE80F27C523370095ACC1 /* DadJokesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		EA57138027B31934005A4DB3 /* Debug */ = {
+		EA8AE81727C523380095ACC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -208,7 +196,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -218,7 +206,7 @@
 			};
 			name = Debug;
 		};
-		EA57138127B31934005A4DB3 /* Release */ = {
+		EA8AE81827C523380095ACC1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -263,7 +251,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -273,14 +261,14 @@
 			};
 			name = Release;
 		};
-		EA57138327B31934005A4DB3 /* Debug */ = {
+		EA8AE81A27C523380095ACC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ArithmeticAce/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"DadJokes/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -293,7 +281,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ca.willharrington.ArithmeticAce;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.willharrington.DadJokes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -301,14 +289,14 @@
 			};
 			name = Debug;
 		};
-		EA57138427B31934005A4DB3 /* Release */ = {
+		EA8AE81B27C523380095ACC1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ArithmeticAce/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"DadJokes/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -321,7 +309,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ca.willharrington.ArithmeticAce;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.willharrington.DadJokes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -332,25 +320,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EA57136F27B31933005A4DB3 /* Build configuration list for PBXProject "ArithmeticAce" */ = {
+		EA8AE80627C523370095ACC1 /* Build configuration list for PBXProject "DadJokes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EA57138027B31934005A4DB3 /* Debug */,
-				EA57138127B31934005A4DB3 /* Release */,
+				EA8AE81727C523380095ACC1 /* Debug */,
+				EA8AE81827C523380095ACC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EA57138227B31934005A4DB3 /* Build configuration list for PBXNativeTarget "ArithmeticAce" */ = {
+		EA8AE81927C523380095ACC1 /* Build configuration list for PBXNativeTarget "DadJokes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EA57138327B31934005A4DB3 /* Debug */,
-				EA57138427B31934005A4DB3 /* Release */,
+				EA8AE81A27C523380095ACC1 /* Debug */,
+				EA8AE81B27C523380095ACC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = EA57136C27B31933005A4DB3 /* Project object */;
+	rootObject = EA8AE80327C523370095ACC1 /* Project object */;
 }
