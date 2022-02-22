@@ -46,15 +46,17 @@ struct ContentView: View {
                     .font(.title3)
                     .bold()
                 
-                // List
-                List {
-                    Text("Which side of the chicken has more feathers? The outside.")
-                    Text("Why did the Clydesdale give the pony a glass of water? Because he was a little horse!")
-                    Text("The great thing about stationery shops is they're always in the same place...")
-                }
+                Spacer()
                 
             }
 
+            // List
+            List {
+                Text("Which side of the chicken has more feathers? The outside.")
+                Text("Why did the Clydesdale give the pony a glass of water? Because he was a little horse!")
+                Text("The great thing about stationery shops is they're always in the same place...")
+            }
+            
             Spacer()
                         
         }
