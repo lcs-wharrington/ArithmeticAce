@@ -54,10 +54,10 @@
 			isa = PBXGroup;
 			children = (
 				EA8AE80E27C523370095ACC1 /* DadJokesApp.swift */,
+				EA8AE81E27C52EB50095ACC1 /* Model */,
 				EA8AE81027C523370095ACC1 /* ContentView.swift */,
 				EA8AE81227C523380095ACC1 /* Assets.xcassets */,
 				EA8AE81427C523380095ACC1 /* Preview Content */,
-				EA8AE81C27C528430095ACC1 /* DadJoke.swift */,
 			);
 			path = DadJokes;
 			sourceTree = "<group>";
@@ -68,6 +68,14 @@
 				EA8AE81527C523380095ACC1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EA8AE81E27C52EB50095ACC1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EA8AE81C27C528430095ACC1 /* DadJoke.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

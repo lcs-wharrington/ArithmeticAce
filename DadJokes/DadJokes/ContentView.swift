@@ -12,13 +12,11 @@ struct ContentView: View {
     // MARK: Stored Properties
     @State var currentJoke: DadJoke = DadJoke(id: "", joke: "", status: 0)
     
-    
     // MARK: Computed Properties
-    
     
     var body: some View {
         
-        //UI
+        // MARK: UI
         VStack {
             
             // The displayed dad joke
@@ -64,12 +62,9 @@ struct ContentView: View {
                 Text("Why did the Clydesdale give the pony a glass of water? Because he was a little horse!")
                 Text("The great thing about stationery shops is they're always in the same place...")
             }
-            
-            Spacer()
-                        
         }
         
-        //At ap launch find a new joke.
+        // MARK: Task
         .task{
             
             //Assemble url
@@ -99,15 +94,13 @@ struct ContentView: View {
             } catch {
                 
                 print("Failed to retreive or decode the JSON from endpoint.")
-                // Print the error
-                //
+                // Print the errored code
                 print(error)
             }
         }
         .navigationTitle("icanhazdadjoke?")
         .padding()
     }
-    
 }
 
 struct ContentView_Previews: PreviewProvider {
