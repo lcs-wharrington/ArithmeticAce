@@ -8,17 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    // MARK: Stored Properties
+    @State var currentJoke: DadJoke = DadJoke(id: "", joke: "", status: 0)
+    
+    
+    // MARK: Computed Properties
+    
+    
     var body: some View {
+        
+        //UI
         VStack {
             
             // The displayed dad joke
-            Text("How do you organize a space party? You planet.")
+            Text(currentJoke.joke)
                 .multilineTextAlignment(.leading)
                 .padding(30)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 16)
-                        .stroke(Color.primary, lineWidth: 4)
-                )
+                .overlay(RoundedRectangle(cornerRadius: 16)
+                .stroke(Color.primary, lineWidth: 4))
                 .padding(10)
             // Heart circle
            
@@ -59,6 +67,42 @@ struct ContentView: View {
             
             Spacer()
                         
+        }
+        
+        //At ap launch find a new joke.
+        .task{
+            
+            //Assemble url
+            let url = URL(string: "https://icanhazdadjoke.com/")!
+            
+            //Define data type
+            //configure request to web site
+            var request = URLRequest(url: url)
+            
+            //Ask for json
+            request.setValue("appliction/json", forHTTPHeaderField: "Accept")
+            
+            //Start session to interact with the endpoint
+            let urlSession = URLSession.shared
+            
+            //Attempt to fetch new joke
+            //Possible do-catch result
+            do {
+                
+                //retreve raw data from endpoint
+                let (data, _) = try await urlSession.data(for: request)
+                
+                //Attept at decode data to swift struct
+                //takes the data and trys to apply it to "currentJoke"
+                currentJoke = try JSONDecoder().decode(DadJoke.self, from: data)
+                
+            } catch {
+                
+                print("Failed to retreive or decode the JSON from endpoint.")
+                // Print the error
+                //
+                print(error)
+            }
         }
         .navigationTitle("icanhazdadjoke?")
         .padding()
